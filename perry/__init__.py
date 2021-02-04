@@ -87,6 +87,8 @@ if ENV:
 
     DB_URI = os.environ.get("DATABASE_URL")
     DONATION_LINK = os.environ.get("DONATION_LINK")
+    API_ID = os.environ.get('API_ID', None)
+    API_HASH = os.environ.get('API_HASH', None)
     LOAD = os.environ.get("LOAD", "").split()
     NO_LOAD = os.environ.get("NO_LOAD", "").split()
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", False))
@@ -177,11 +179,7 @@ if SPAMWATCH == None:
 else:
     spamwtc = spamwatch.Client(SPAMWATCH)
 
-# Telethon
-api_id = TELETHON_ID
-api_hash = TELETHON_HASH
-client = TelegramClient("perry", api_id, api_hash)
-
+client = TelegramClient("saber", API_ID, API_HASH)
 updater = tg.Updater(TOKEN, workers=WORKERS)
 
 dispatcher = updater.dispatcher
