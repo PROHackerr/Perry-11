@@ -456,7 +456,7 @@ Some dank memes for fun or whatever!
 Some other regex filters are:
 `me too` | `goodmorning` | `goodnight`.
 
-perry will reply random strings accordingly when these words are used!
+Saber will reply random strings accordingly when these words are used!
 All regex filters can be disabled incase u don't want... like: `/disable metoo`.
 
 """
@@ -465,7 +465,7 @@ __mod_name__ = "Memes"
 
 SHRUG_HANDLER = DisableAbleCommandHandler("shrug", shrug)
 DECIDE_HANDLER = DisableAbleMessageHandler(
-    Filters.regex(r"(?i)^perry\?"), decide, friendly="decide"
+    Filters.regex(r"(?i)^saber\?"), decide, friendly="decide"
 )
 SNIPE_HANDLER = CommandHandler(
     "snipe", snipe, pass_args=True, filters=CustomFilters.sudo_filter
