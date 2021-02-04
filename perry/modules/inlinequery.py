@@ -32,7 +32,7 @@ from perry import (
     LOGGER,
     BLACKLIST_CHATS,
     WHITELIST_CHATS,
-    CLEAN_UPDATE,
+   
 )
 
 # ----------------------------------------------#
