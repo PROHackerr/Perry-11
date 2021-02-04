@@ -49,15 +49,15 @@ I have lots of handy features, check how to use commands
 by clicking on "Help and Commands".
 
 Any issues or need help related to me? 
-Report to @YumiUzo_bot!
+Report to @fateunion!
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="Add to Group 👥", url="t.me/platapustestbot?startgroup=true"
+            text="Add to Group 👥", url="t.me/saber_herobot?startgroup=true"
         ),
-        InlineKeyboardButton(text="Updates 📢", url="https://t.me/FinfBotNews"),
+        InlineKeyboardButton(text="Updates 📢", url="https://t.me/fateunionupdates"),
     ]
 ]
 
