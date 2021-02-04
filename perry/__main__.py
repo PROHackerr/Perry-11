@@ -29,7 +29,7 @@ from perry import (
     LOGGER,
     BLACKLIST_CHATS,
     WHITELIST_CHATS,
-    CLEAN_UPDATE,
+   
 )
 
 # needed to dynamically load modules
@@ -39,7 +39,7 @@ from perry.modules.purge import client
 from perry.modules.helper_funcs.chat_status import is_user_admin
 from perry.modules.helper_funcs.misc import paginate_modules
 from perry.modules.helper_funcs.alternate import typing_action
-
+CLEAN_UPDATE=None
 
 PM_START_TEXT = f"""
 Hey there! My name is <b>{dispatcher.bot.first_name}</b>.
